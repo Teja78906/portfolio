@@ -309,7 +309,7 @@ export default function HeroSection() {
                 },
                 {
                   icon: <LinkedIn fontSize="large" />,
-                  url: "https://www.linkedin.com/in/tejaswaroop",
+                  url: "https://www.linkedin.com/in/teja-swaroop-b984b4244",
                   color: "#0077B5",
                 },
                 {

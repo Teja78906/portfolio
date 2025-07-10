@@ -29,13 +29,30 @@ export default function ContactSection() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      console.log("Message sent!");
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      console.error("Failed to send message");
+      alert("Something went wrong. Try again later.");
+    }
+  } catch (err) {
+    console.error("Error:", err);
+    alert("Failed to submit the form.");
+  }
+};
+
 
   const socialLinks = [
     {
@@ -47,7 +64,7 @@ export default function ContactSection() {
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn",
-      url: "https://www.linkedin.com/in/tejaswaroop",
+      url: "https://www.linkedin.com/in/teja-swaroop-b984b4244",
       color: "#4ECDC4",
     },
     {
