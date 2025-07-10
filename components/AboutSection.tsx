@@ -41,26 +41,25 @@ export default function AboutSection() {
       description:
         "Built core protocol logic, Rust smart contracts, and dev tooling for the Dharitri PoS blockchain.",
       details: `Dugong Global Services, Hyderabad
-Blockchain Developer
-Aug 2024 – Present
+Blockchain Developer | Aug 2024 – Present
 
-Contributing to the core infrastructure and ecosystem tools of Dharitri — a scalable, sharded Proof-of-Stake blockchain platform.
+Contributing to the core infrastructure and developer tools of Dharitri—a high-performance, sharded Proof-of-Stake blockchain platform inspired by MultiversX and NEAR.
 
-• Protocol Development: Implemented validator rotation, transaction execution, and shard coordination logic using Go, enabling high throughput and secure consensus in a multi-shard architecture.
+Protocol Development: Implemented validator rotation, transaction execution, and shard coordination logic in Go, supporting efficient consensus and parallel execution across shards.
 
-• Smart Contract Engineering: Designed and deployed Rust-based smart contracts for staking and governance; compiled to WASM to ensure cross-shard interoperability.
+Smart Contract Engineering: Designed and deployed Rust-based smart contracts for staking and governance, compiled to WASM for seamless cross-shard interoperability within the Dharitri VM.
 
-• Tooling & SDKs: Built developer-facing CLI tools in Python to interact with blockchain nodes, perform validator operations, and support scripting workflows.
+Tooling & SDKs: Built developer-facing CLI tools in Python (via drtpycli) to perform validator operations, account queries, and contract calls; contributed to scripting and automation workflows.
 
-• API Integration & Testing: Designed and tested REST and gRPC APIs for on-chain operations and cross-service communication; supported automated API testing in TypeScript test suites.
+API Integration & Testing: Developed and tested REST and gRPC APIs for on-chain functionality, supporting automated test suites in TypeScript to ensure reliable validator and wallet operations.
 
-• Package Publishing: Maintained and published reusable packages to PyPI, crates.io, and npmjs.org, supporting a multi-language developer ecosystem.
+Package Publishing: Maintained reusable modules and libraries across the drt ecosystem; published packages to PyPI, crates.io, and npm to support multi-language development.
 
-• DevOps & Deployment: Contributed to CI/CD pipelines and Docker image releases via Docker Hub; enabled repeatable deployment and testing environments across QA and staging nodes.
+DevOps & Deployment: Contributed to CI/CD workflows and Docker-based deployments using Docker Hub, enabling reproducible testnet deployments and QA environment isolation.
 
-• Cloud Infrastructure: Assisted with AWS-powered backend operations including S3 for state backups, EC2 for node deployments, CloudWatch for monitoring, and IAM for secure access control — ensuring reliability and scalability of the blockchain infrastructure.
+Cloud Infrastructure: Assisted with AWS-backed infrastructure — using EC2 for validator nodes, S3 for state snapshots, IAM for secure access, and CloudWatch for monitoring/log collection.
 
-• Frontend Collaboration: Worked closely with frontend teams to integrate wallet signing, account abstraction, and dApp workflows; validated transaction flows on internal testnet.`,
+Frontend Collaboration: Integrated with frontend teams to implement wallet signing (native auth using drt signatures), account abstraction, and dApp flows tested on Dharitri's internal testnet.`,
       color: "#FF6B6B",
     },
     {
