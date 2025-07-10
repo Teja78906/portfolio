@@ -236,11 +236,12 @@ export default function HeroSection() {
                 </Button>
               </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a href="/resume.pdf" download>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <a
+                  href="https://drive.google.com/file/d/1QUmPVhdPUbokx87YITqfqPKlKll-7tRZ/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     variant="outlined"
                     size="large"
@@ -264,6 +265,7 @@ export default function HeroSection() {
                   </Button>
                 </a>
               </motion.div>
+
 
               <motion.div
                 whileHover={{ scale: 1.05 }}
