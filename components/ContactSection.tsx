@@ -70,7 +70,7 @@ export default function ContactSection() {
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      url: "mailto:tejaswaroop7030@gmail.com",
+      url: "mailto:tejaswaroop0507@gmail.com",
       color: "#FFD166",
     },
   ];

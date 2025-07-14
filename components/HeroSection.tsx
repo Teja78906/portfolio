@@ -316,7 +316,7 @@ export default function HeroSection() {
                 },
                 {
                   icon: <Email fontSize="large" />,
-                  url: "mailto:tejaswaroop7030@gmail.com",
+                  url: "mailto:tejaswaroop0507@gmail.com",
                   color: "#EA4335",
                 },
               ].map((item, index) => (
