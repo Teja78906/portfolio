@@ -238,7 +238,7 @@ export default function HeroSection() {
 
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <a
-                  href="https://drive.google.com/file/d/1QUmPVhdPUbokx87YITqfqPKlKll-7tRZ/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1QUmPVhdPUbokx87YITqfqPKlKll-7tRZ/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
