@@ -189,7 +189,7 @@ export default function HeroSection() {
                 },
               }}
             >
-              Blockchain Developer | AI/ML Enthusiast | Cybersecurity Explorer
+              Full Stack Developer | AI/ML Enthusiast | Cybersecurity Explorer
             </Typography>
           </motion.div>
 

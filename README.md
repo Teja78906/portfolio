@@ -1,6 +1,6 @@
 # Modern Portfolio Website
 
-This is my personal portfolio website. It highlights my work in **blockchain development**, **AI/ML**, **cybersecurity**, and includes sections on my projects, certifications, blogs, and contact information.
+This is my personal portfolio website. It highlights my work in **Full Stack** **blockchain development**, **AI/ML**, **cybersecurity**, and includes sections on my projects, certifications, blogs, and contact information.
 
 The website has a clean and modern design, built using React and Tailwind CSS with help from v0.dev, and deployed using Vercel.
 

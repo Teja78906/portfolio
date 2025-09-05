@@ -36,30 +36,31 @@ export default function AboutSection() {
   const highlights: HighlightItem[] = [
     {
       icon: <Work />,
-      title: "Blockchain Developer",
+      title: "Full Stack Developer",
       subtitle: "Dugong Global Services",
       description:
         "Built core protocol logic, Rust smart contracts, and dev tooling for the Dharitri PoS blockchain.",
       details: `Dugong Global Services, Hyderabad
-Blockchain Developer | Aug 2024 – Present
+Full Stack Developer | Aug 2024 – Present
 
-Contributing to the core infrastructure and developer tools of Dharitri—a high-performance, sharded Proof-of-Stake blockchain platform inspired by MultiversX and NEAR.
+At Dugong Global Services, Hyderabad, I work as a Full Stack Developer.
+I build backend services in Go and Python, focusing on APIs and automation tools.
+I developed event-driven pipelines that process and react to system events in real-time.
+I also created a CLI tool for secure key management, simplifying developer workflows.
 
-Protocol Development: Implemented validator rotation, transaction execution, and shard coordination logic in Go, supporting efficient consensus and parallel execution across shards.
+On the frontend side, I used Next.js 14, React 18, and Tailwind CSS.
+I implemented dashboards for tracking blockchain activity.
+I built wallet onboarding flows with secure authentication and smooth UX.
+I added animated UI components to make the interfaces engaging and modern.
 
-Smart Contract Engineering: Designed and deployed Rust-based smart contracts for staking and governance, compiled to WASM for seamless cross-shard interoperability within the Dharitri VM.
+For deployment, I worked with Docker and Kubernetes to containerize and scale services.
+I used Terraform and Helm to provision AWS infrastructure and automate deployments.
+I set up observability with CloudWatch, adding logs, metrics, and health checks.
 
-Tooling & SDKs: Built developer-facing CLI tools in Python (via drtpycli) to perform validator operations, account queries, and contract calls; contributed to scripting and automation workflows.
-
-API Integration & Testing: Developed and tested REST and gRPC APIs for on-chain functionality, supporting automated test suites in TypeScript to ensure reliable validator and wallet operations.
-
-Package Publishing: Maintained reusable modules and libraries across the drt ecosystem; published packages to PyPI, crates.io, and npm to support multi-language development.
-
-DevOps & Deployment: Contributed to CI/CD workflows and Docker-based deployments using Docker Hub, enabling reproducible testnet deployments and QA environment isolation.
-
-Cloud Infrastructure: Assisted with AWS-backed infrastructure — using EC2 for validator nodes, S3 for state snapshots, IAM for secure access, and CloudWatch for monitoring/log collection.
-
-Frontend Collaboration: Integrated with frontend teams to implement wallet signing (native auth using drt signatures), account abstraction, and dApp flows tested on Dharitri's internal testnet.`,
+I optimized performance by building reusable TypeScript components.
+I integrated Sharp for efficient image processing and delivery.
+I set up static site export pipelines for faster page loads.
+I improved CI/CD with GitHub Actions, making deployments more reliable and faster.`,
       color: "#FF6B6B",
     },
     {
@@ -191,12 +192,12 @@ Alongside academics, I interned at Averlon Technologies, where I worked on cloud
               fontSize: { xs: "1rem", md: "1.25rem" },
             }}
           >
-            I'm a passionate Blockchain Developer and AI/ML enthusiast with
-            strong roots in software development and Cybersecurity. From building secure
-            decentralized apps to detecting AWS misconfigurations, I strive to
-            create scalable, intelligent systems. A graduate from NIT
-            Kurukshetra, I’m constantly exploring the intersection of
-            innovation, performance, and security.
+            I'm a passionate Full Stack Developer and AI/ML enthusiast with
+            strong roots in software development and Cybersecurity. From
+            building secure decentralized apps to detecting AWS
+            misconfigurations, I strive to create scalable, intelligent systems.
+            A graduate from NIT Kurukshetra, I’m constantly exploring the
+            intersection of innovation, performance, and security.
           </Typography>
         </motion.div>
 
@@ -209,7 +210,8 @@ Alongside academics, I interned at Averlon Technologies, where I worked on cloud
           <Grid container spacing={{ xs: 3, md: 4 }}>
             {highlights.map((item, index) => (
               <Grid item xs={12} sm={6} key={index}>
-                <motion.div variants={itemVariants}
+                <motion.div
+                  variants={itemVariants}
                   whileHover={{ y: -8 }}
                   onClick={() => {
                     setSelectedItem(item);
@@ -325,7 +327,6 @@ Alongside academics, I interned at Averlon Technologies, where I worked on cloud
                   </Card>
                 </motion.div>
               </Grid>
-
             ))}
           </Grid>
         </motion.div>
@@ -344,7 +345,11 @@ Alongside academics, I interned at Averlon Technologies, where I worked on cloud
           <DialogContent dividers>
             <Typography
               variant="body1"
-              sx={{ whiteSpace: "pre-line", fontSize: "0.95rem", lineHeight: 1.7 }}
+              sx={{
+                whiteSpace: "pre-line",
+                fontSize: "0.95rem",
+                lineHeight: 1.7,
+              }}
             >
               {selectedItem?.details === "to be updated"
                 ? "Full description will be added soon."

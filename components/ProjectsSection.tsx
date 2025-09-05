@@ -129,7 +129,7 @@ export default function ProjectsSection() {
             style={{ color: theme.palette.text.secondary }}
             className="max-w-2xl mx-auto pt-3"
           >
-            A collection of my AI/ML, blockchain, and cybersecurity projects
+            A collection of my Full stack, AI/ML, blockchain, and cybersecurity projects
             demonstrating real-world solutions in prediction systems, smart
             contracts, cloud security, and decentralized applications.
           </p>

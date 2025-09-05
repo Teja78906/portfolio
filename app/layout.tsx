@@ -6,13 +6,13 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Allu Teja Swaroop - Blockchain Developer | AI/ML Enthusiast | Cybersecurity Explorer",
+  title: "Allu Teja Swaroop - Full Stack Developer | AI/ML Enthusiast | Cybersecurity Explorer",
   description:
-    "Portfolio of Allu Teja Swaroop, a passionate Blockchain Developer, AI/ML Intern, and CEH-certified Cybersecurity Explorer with a strong foundation in cloud-native development and full-stack engineering.",
-  keywords: "Blockchain, AI/ML, Cybersecurity, Rust, Go, Smart Contracts, Rego, AWS, Docker, Full-Stack, dApps, CEH",
+    "Portfolio of Allu Teja Swaroop, a passionate Full Stack Developer, AI/ML Intern, and CEH-certified Cybersecurity Explorer with a strong foundation in cloud-native development and full-stack engineering.",
+  keywords: "Full Stack Development, Blockchain, AI/ML, Cybersecurity, Rust, Go, Smart Contracts, Rego, AWS, Docker, Full-Stack, dApps, CEH",
   authors: [{ name: "Allu Teja Swaroop" }],
   openGraph: {
-    title: "Allu Teja Swaroop - Blockchain Developer | AI/ML Enthusiast",
+    title: "Allu Teja Swaroop - Full Stack Developer | AI/ML Enthusiast",
     description:
       "Explore the portfolio of Allu Teja Swaroop – Blockchain and AI Developer with a focus on scalable, secure systems and decentralized technologies.",
     url: "https://yourdomain.dev", // replace with your deployed portfolio domain
