@@ -25,7 +25,7 @@ export default function ProjectsSection() {
     {
       title: "AI-Driven Stock Prediction System",
       description:
-        "Built a web application to predict stock market trends using machine learning models and real-time data ingestion.",
+        "During my internship at Wezenite technologies, I built a web application to predict stock market trends using machine learning models and real-time data ingestion.",
       technologies: ["Python", "Scikit-learn", "React.js", "AWS", "MongoDB"],
       image: "/stockPrediction.jpg?height=200&width=400",
       githubUrl: "https://github.com/Teja78906/stock-prediction", // Adjust if actual repo differs
