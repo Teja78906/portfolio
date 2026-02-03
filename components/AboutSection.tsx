@@ -4,8 +4,8 @@ import {
   Box,
   Typography,
   Container,
-  Grid,
   Card,
+  GridLegacy as Grid,
   CardContent,
   useTheme,
   Dialog,
@@ -14,6 +14,7 @@ import {
   DialogTitle,
   Button,
 } from "@mui/material";
+
 import { School, Work, Cloud, Code } from "@mui/icons-material";
 import { motion } from "framer-motion";
 import { JSX, useState } from "react";
@@ -34,6 +35,15 @@ export default function AboutSection() {
   const [selectedItem, setSelectedItem] = useState<HighlightItem | null>(null);
 
   const highlights: HighlightItem[] = [
+    {
+      icon: <Work />,
+      title: "Product Engineer",
+      subtitle: "Improving",
+      description:
+        "Contributed to Rancher (a SUSE product) multi-cluster Kubernetes management features and bug fixes in Golang.",
+      details: `Contributing to the SUSE Rancher open-source ecosystem by maintaining and enhancing the github.com/rancher codebase, including triaging and resolving issues related to multi-cluster Kubernetes management. Implementing production-grade fixes and enhancements in Golang, performing dependency and version upgrades, and ensuring compatibility across multiple Kubernetes distributions and versions. Working extensively with Helm charts and Kubernetes operators to improve cluster provisioning, upgrades, and lifecycle workflows managed by Rancher. Collaborating with upstream maintainers to review, test, and merge changes that enhance the stability, scalability, and reliability of Rancher-managed clusters in cloud-native environments.`,
+      color: "#4e7fcd",
+    },
     {
       icon: <Work />,
       title: "Full Stack Developer",
@@ -135,7 +145,7 @@ Alongside academics, I interned at Averlon Technologies, where I worked on cloud
           opacity: 0.03,
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23${theme.palette.primary.main.replace(
             "#",
-            ""
+            "",
           )}' fillOpacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           zIndex: 0,
         }}
@@ -209,7 +219,7 @@ Alongside academics, I interned at Averlon Technologies, where I worked on cloud
         >
           <Grid container spacing={{ xs: 3, md: 4 }}>
             {highlights.map((item, index) => (
-              <Grid item xs={12} sm={6} key={index}>
+              <Grid component="div" item xs={12} sm={6} key={index}>
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ y: -8 }}
